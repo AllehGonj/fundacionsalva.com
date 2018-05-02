@@ -1,0 +1,105 @@
+#title-center{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#title-center p{
+    margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 15px;
+	font-weight: 400;
+	color: #777;
+}
+#objetives-section{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+#objetives-section > #title-center{
+    margin-top: 50px;
+}
+.carousel-caption > p{
+    font-size: 24px;
+    font-weight: 500;
+}
+@media (max-width: 472px){
+    .carousel-caption > p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+#slideshow img{
+    filter: brightness(50%);
+}
+#our-services{
+    width: 90%;
+    margin: 0 auto;
+}
+.target{
+    cursor: pointer;
+    height: 420px;
+    perspective: 600px;
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+    font-size: 14px;
+    color: #777;
+}
+.card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transition: all 1.6s ease;
+    -webkit-transition: all 1.6s ease;
+    -moz-transition: all 1.6s ease;
+    width: 100%;
+}
+.thumbnail{
+    height: 420px;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.thumbnail h3{
+    font-weight: 300;
+}
+.thumbnail img{
+    height: 330px;
+}
+.card:hover {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+.card .front {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.17);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.17);
+}
+.card .back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.17);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.17);
+}
